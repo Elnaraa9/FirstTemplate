@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 32px;
+  width: 1760px;
+  left: 80px;
+  top: 34px;
+  border-radius: 0px;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #f2f2f2;
+  font-family: "PT Serif", serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 19px;
+}
+li {
+  display: inline-block;
+}
+li a {
+  color: #171717;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 19px;
+  width: 368px;
+  left: 1391px;
+  top: 8px;
+}
+.active {
+  color: #c9a96e;
+}
+
+li a:hover {
+  color: #c9a96e;
+}
+.logo {
+  width: 128px;
+  height: 32px;
+  display: inline-block;
+}
+.navbar {
+  display: inline-block;
+}
+.slide {
+  background-image: url("/assets/img/frst.jpg");
+  height: 700px;
+  color: #ffffff;
+  font-family: "PT Serif", serif;
+
+  .thin {
+    font-size: 14px;
+    line-height: 18.12px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
