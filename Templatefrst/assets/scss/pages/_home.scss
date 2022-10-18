@@ -3,122 +3,140 @@
   padding: 0;
   box-sizing: border-box;
 }
-.narrow-container {
-  font-family: "PT Serif", serif;
-  max-width:1760px ;
-  width: 100%;
-  height: 32px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  .nav-link {
-    font-size: 14px;
-    text-decoration: none;
-    color: #171717;
-    margin-left: 20px;
-    &:hover {
-      color: #c9a96e;
+header {
+  .narrow-container {
+    font-family: $primary-font;
+    max-width: 1760px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-bottom: 30px;
+    .nav-link {
+      font-size: 15px;
+      text-decoration: none;
+      color: $primary-color;
+      margin-left: 30px;
+      &:hover {
+        color: $secondary-color;
+      }
     }
+    .active {
+      color: $secondary-color;
+    }
+    img {
+      margin-left: 60px;
+      width: 129px;
+      height: 35px;
+    }
+  }
 }
-.active {
-    color: #c9a96e;
+.hero {
+  position: relative;
+  .container {
+    max-width: 1920px;
+  }
+  .text-container {
+    position: absolute;
+    bottom: 12%;
+    left: 15%;
+    color: #ffffff;
+    font-family: $primary-font;
+    p {
+      font-size: 14px;
+      font-weight: $primary-font-weight;
+      line-height: 18.12px;
+      span {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .gray {
+        color: #999999;
+        margin-right: -3px;
+      }
+    }
+    .large-text {
+      font-size: 40px;
+      font-weight: $secondary-font-weight;
+      line-height: 50px;
+    }
+  }
 }
-img{
-    margin-left: 50px;
+.cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template: 1 / 1;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    width: 370px;
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .container {
+      padding: 2px 16px;
+      img {
+        max-width: 100%;
+      }
+      h5 {
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-size: 12px;
+        font-weight: $primary-font-weight;
+        line-height: 15px;
+        text-align: center;
+      }
+      .second-text {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: $primary-font-weight;
+        color: $primary-color;
+      }
+      p {
+        color: #666666;
+        font-size: 12px;
+        font-weight: $primary-font-weight;
+        line-height: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+        span {
+          color: #b1b1b1;
+          margin-left: 5px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .wide {
+    grid-column: span 2;
+    width: 770px;
+    .wide-text {
+      font-family: $primary-font;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: $primary-font-weight;
+      color: #666666;
+    }
+  }
 }
+.pagination {
+  margin-top: 60px;
+  width: 509px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin: 3rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   header {
-//     height: 32px;
-//     width: 1760px;
-//     left: 80px;
-//     top: 34px;
-//     border-radius: 0px;
-//   }
-
-//   ul {
-//     list-style-type: none;
-//     background-color: #f2f2f2;
-//     font-family: "PT Serif", serif;
-//     font-size: 14px;
-//     font-weight: 400;
-//     height: 19px;
-//   }
-//   li {
-//     display: inline-block;
-//   }
-//   li a {
-//     color: #171717;
-//     padding: 14px 16px;
-//     text-decoration: none;
-//     height: 19px;
-//     width: 368px;
-//     left: 1391px;
-//     top: 8px;
-//   }
-//   .active {
-//     color: #c9a96e;
-//   }
-
-//   li a:hover {
-//     color: #c9a96e;
-//   }
-//   .logo {
-//     width: 128px;
-//     height: 32px;
-//     display: inline-block;
-//   }
-//   .navbar {
-//     display: inline-block;
-//   }
-//   .slide {
-//     background-image: url("/assets/img/frst.jpg");
-//     height: 700px;
-//     color: #ffffff;
-//     font-family: "PT Serif", serif;
-
-//     .thin {
-//       font-size: 14px;
-//       line-height: 18.12px;
-//       font-weight: 400;
-//     }
-//     p {
-//       font-size: 40px;
-//       font-weight: 700;
-//     }
-//   }

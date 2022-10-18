@@ -1,30 +1,196 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.narrow-container {
-  font-family: "PT Serif", serif;
+header .narrow-container {
+  font-family: "PT Sans", sans-serif;
   max-width: 1760px;
-  width: 100%;
   height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 34px;
+  margin-bottom: 30px;
 }
-.narrow-container .nav-link {
-  font-size: 14px;
+
+header .narrow-container .nav-link {
+  font-size: 15px;
   text-decoration: none;
   color: #171717;
-  margin-left: 20px;
+  margin-left: 30px;
 }
-.narrow-container .nav-link:hover {
+
+header .narrow-container .nav-link:hover {
   color: #c9a96e;
 }
-.narrow-container .active {
+
+header .narrow-container .active {
   color: #c9a96e;
 }
-.narrow-container img {
-  margin-left: 50px;
-}/*# sourceMappingURL=main.css.map */
+
+header .narrow-container img {
+  margin-left: 60px;
+  width: 129px;
+  height: 35px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .container {
+  max-width: 1920px;
+}
+
+.hero .text-container {
+  position: absolute;
+  bottom: 12%;
+  left: 15%;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+}
+
+.hero .text-container p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.12px;
+}
+
+.hero .text-container p span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hero .text-container p .gray {
+  color: #999999;
+  margin-right: -3px;
+}
+
+.hero .text-container .large-text {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.cards {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 1;
+      grid-template: 1 / 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.cards .card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 370px;
+}
+
+.cards .card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards .card .container {
+  padding: 2px 16px;
+}
+
+.cards .card .container img {
+  max-width: 100%;
+}
+
+.cards .card .container h5 {
+  color: #c9a96e;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+}
+
+.cards .card .container .second-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #171717;
+}
+
+.cards .card .container p {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cards .card .container p span {
+  color: #b1b1b1;
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.cards .wide {
+  grid-column: span 2;
+  width: 770px;
+}
+
+.cards .wide .wide-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.pagination {
+  margin-top: 60px;
+  width: 509px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  margin: 3rem;
+}
+/*# sourceMappingURL=main.css.map */
