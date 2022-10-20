@@ -153,10 +153,17 @@ header {
 }
 .side-container {
   display: grid;
-  justify-content: end;
-  align-items: flex-end;
+  grid-template-areas:
+    ". . . . aside"
+    ". . . . aside"
+    ". . . . aside";
+  grid-row-start: 1;
   gap: 20px;
   .side-cards {
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    grid-area: aside;
     width: 270px;
     height: 500px;
     .about {
@@ -171,5 +178,24 @@ header {
         font-weight: $primary-font-weight;
       }
     }
+  }
+}
+.catalogs {
+
+  margin-top: 80px;
+  .catalog-header {
+    margin-bottom: 39px;
+    h5 {
+      font-size: 24px;
+      font-weight: $primary-font-weight;
+      font-family: $primary-font;
+      line-height: 31.8px;
+      text-align: center;
+    }
+  }
+  .catalog{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
   }
 }
