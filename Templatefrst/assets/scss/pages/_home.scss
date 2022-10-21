@@ -34,7 +34,7 @@ header {
 .hero {
   position: relative;
   .container {
-    max-width: 1700px;
+    max-width: 1920px;
   }
   .text-container {
     position: absolute;
@@ -227,12 +227,27 @@ header {
       line-height: 18.12px;
       font-family: $primary-font;
       color: #666666;
+      &:hover{
+        color: $secondary-color;
+      }
     }
   }
   .icons {
     text-align: center;
-    i {
+    a{
       margin-left: 20px;
+      i{
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        border: 1px solid #e5e5e5;
+        color: #666666;
+        padding: 8px;
+      }
+    }
+    .fa-twitter, i:hover{
+      color: #FFFFFF;
+      background-color: $secondary-color;
     }
   }
   hr {
