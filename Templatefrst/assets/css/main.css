@@ -83,7 +83,7 @@ header .narrow-container img {
 }
 
 .left-cards {
-  margin-top: 50px;
+  margin-top: 59px;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -209,43 +209,31 @@ header .narrow-container img {
   color: #171717;
 }
 
-.side-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: ". . . . aside" ". . . . aside" ". . . . aside";
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  gap: 20px;
-}
-
 .side-container .side-cards {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -ms-flex-line-pack: end;
-      align-content: end;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 5;
-  grid-area: aside;
   width: 270px;
   height: 500px;
+  margin-top: 60px;
 }
 
 .side-container .side-cards .about {
   width: 270px;
-  height: 30px;
+  height: 50px;
   border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .side-container .side-cards .about p {
-  text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   color: #171717;
   font-weight: 400;
+  padding: 15px;
+}
+
+.side-container .side-cards .side-card img {
+  width: 270px;
+  height: 180px;
 }
 
 .catalogs {
@@ -354,5 +342,18 @@ header .narrow-container img {
   color: #666666;
   font-weight: 400;
   margin-bottom: 29px;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 770px 270px;
+      grid-template-columns: 770px 270px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

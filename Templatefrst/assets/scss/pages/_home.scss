@@ -66,7 +66,7 @@ header {
   }
 }
 .left-cards {
-  margin-top: 50px;
+  margin-top: 59px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -154,35 +154,66 @@ header {
     }
   }
 }
+
+
+
+
+
+
 .side-container {
-  display: grid;
-  grid-template-areas:
-    ". . . . aside"
-    ". . . . aside"
-    ". . . . aside";
-  grid-row-start: 1;
-  gap: 20px;
   .side-cards {
-    display: grid;
-    justify-content: end;
-    align-content: end;
-    grid-area: aside;
     width: 270px;
     height: 500px;
+    margin-top: 60px;
     .about {
       width: 270px;
-      height: 30px;
+      height: 50px;
       border: 1px solid #e5e5e5;
+      margin-bottom: 20px;
+      text-align: center;
       p {
-        text-align: center;
         font-family: $primary-font;
         font-size: 16px;
         color: $primary-color;
         font-weight: $primary-font-weight;
+      padding: 15px;
+      }
+    }
+    .side-card{
+      img{
+        width: 270px;
+        height: 180px;
       }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .catalogs {
   margin-top: 80px;
   margin-bottom: 99px;
@@ -267,4 +298,12 @@ header {
       margin-bottom: 29px;
     }
   }
+}
+.cards{
+display: grid;
+grid-template-columns: 770px 270px;
+max-width: 1170px;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
 }
